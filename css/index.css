@@ -53,6 +53,7 @@ body {
   .container {
     max-width: 80%;
     margin: auto;
+    display: border-box;
     background-color: #ffffff;
     height: 100%;
     color: white;
