@@ -94,6 +94,21 @@ body {
     color: white;
   }
 
+  .image-container{
+      position: relative;
+      text-align: center;
+      color: white;
+  }
   .image-container img{
       width: 100%;
+  }
+
+  .image-container .bottom-left {
+    color: #ffffff;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 5em;
+    text-align: left;
+    padding:3%
   }
