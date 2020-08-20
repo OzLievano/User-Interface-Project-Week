@@ -51,13 +51,13 @@ body {
   }
   
   .container {
-    max-width: 80%;
-    margin: auto;
-    display: border-box;
+    max-width: 100%;
     background-color: #ffffff;
     height: 100%;
     color:#222222;
+    box-sizing: border-box;
     border-radius: 10px;
+    padding: 3%;
   }
 
   .topnav h1{
@@ -67,6 +67,7 @@ body {
   
   .topnav {
     overflow: hidden;
+    width: 100%;
     background-color: #333;
     position: relative;
   }
@@ -100,6 +101,7 @@ body {
 
   .image-container{
       position: relative;
+      width: 100%;
       text-align: center;
       color: white;
       font-weight: bold;
@@ -120,40 +122,98 @@ body {
   }
 
   .middle-container{
+      box-sizing: border-box;
       display: flex;
-      width:100%;
+      width:90%;
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      align-items: center;
       margin-top: 3%;
-      margin-left: 3%;
+      margin-left: 5%;
       color: #222222;
   }
 
   .middle-container > div {
-    align-items: center;
-    width: 50%;
-    word-wrap: inherit;
+      width: 50%;
+      align-items: center;
   }
-
-  #textbox1{
-      align-self: center;
-  }
-
-  #textbox2{
-    align-self: center;
-}
 
 h2{
     font-size: 1.2em;
+    font-weight: bold;
 }
-  button{
-    background-color: #ffffff;
-        padding:1.5%;
-        margin-top: 3%;
-      }
 
-  .middle-container h2{
+button{
+    background-color: #ffffff;
+    padding:1.5%;
+    margin-top: 3%;
+}
+
+.middle-container h2{
     margin-bottom: 3%;
     font-weight: bold;
+}
+
+.project-container{
+    box-sizing: border-box;
+    margin-top: 3%;
+    display:flex;
+    width: 90%;
+    margin-left:5% ;
+    flex-direction: column;
+    position: relative;
+}
+
+.project-container h2{
+    margin-bottom: 3%;
+}
+.project-container img{
+    width: 100%;
+}
+
+.project-container .text-block{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: grey;
+    color: #222222;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
+  .project-container #text-block1 {
+      align-content: center;
+      margin-left: 25%;
+      margin-right: 25%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      line-height: 1.5em;
+      font-size: 1.15em;
+  }
+
+
+  .project-container #text-block2 {
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    line-height: 1.5em;
+    font-size: 1.15em;
+}
+
+
+.project-container #text-block3 {
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    line-height: 1.5em;
+    font-size: 1.15em;
+}
+
+
+
+
 
