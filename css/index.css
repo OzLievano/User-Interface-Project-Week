@@ -124,9 +124,9 @@ body {
   .middle-container{
       box-sizing: border-box;
       display: flex;
-      width:90%;
+      width:95%;
       flex-flow: row wrap;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-items: center;
       margin-top: 3%;
       margin-left: 5%;
@@ -134,8 +134,7 @@ body {
   }
 
   .middle-container > div {
-      width: 50%;
-      align-items: center;
+      width: 40%;
   }
 
 h2{
