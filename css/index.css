@@ -147,6 +147,9 @@ button{
     background-color: #ffffff;
     padding:1.5%;
     margin-top: 3%;
+    line-height:1.5em;
+    text-align: center;
+    width: 25%;
 }
 
 .middle-container h2{
