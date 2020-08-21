@@ -191,6 +191,53 @@ button{
       font-size: 1.15em;
   }
 
+  #image-1{
+      position:relative;
+      width: 100%;
+  }
+  
+  #image-1 h3{
+      position: absolute;
+      bottom:-30px;
+      right: 0px;
+      background-color: lightgrey;
+      padding:3%;
+      font-size: 1.5em;
+      text-align:right;
+      letter-spacing: .5em;
+  }
+
+  #image-2{
+    position:relative;
+    width: 100%;
+}
+
+#image-2 h3{
+    position: absolute;
+    bottom:-30px;
+    left: 0px;
+    background-color: lightgrey;
+    padding:3%;
+    font-size: 1.5em;
+    text-align:right;
+    letter-spacing: .5em;
+}
+
+#image-3{
+    position:relative;
+    width: 100%;
+}
+
+#image-3 h3{
+    position: absolute;
+    bottom:-30px;
+    right: 0px;
+    background-color: lightgrey;
+    padding:3%;
+    font-size: 1.5em;
+    text-align:right;
+    letter-spacing: .5em;
+}
 
   .project-container #text-block2 {
     align-content: center;
@@ -221,7 +268,18 @@ footer{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 3%;
+    padding: 5%;
+    color:#ffffff;
+    line-height: 1em;
+}
+
+.footer-container h3{
+    font-weight: bolder;
+}
+
+.footer-container span{
+    font-weight: lighter;
+    font-size: .5em;
 }
 
 
