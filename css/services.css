@@ -26,6 +26,7 @@ button{
 .solutions{
     display:flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
     align-content: center;
 }
@@ -33,16 +34,19 @@ button{
 .construction{
     display:flex;
     flex-direction: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-top: 3%;
+    width:100%;
+    font-size: 1em;
 }
 
 .construction > div {
     width: 50%;
-    position: relative;
 }
 
+
 .construction img{
-    padding:3%;
+    padding:5%;
     margin:5%;
+    width: 90%;
 }
