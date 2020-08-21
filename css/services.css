@@ -1,0 +1,24 @@
+.services-sum{
+    width:100;
+    margin:3%;
+    background-color: #ffffff;
+    font-size: 1em;
+    line-height: 1.5em;
+    letter-spacing: .09em;
+}
+
+button{
+    width: 20%;
+}
+
+.active{
+    background-color: rgb(5, 130, 179);
+    color:#ffffff;
+    font-weight: bolder;
+}
+
+.solutions{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
