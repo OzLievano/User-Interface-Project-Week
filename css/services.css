@@ -162,11 +162,12 @@ button{
 }
 
 .servicesText{
-    width:80%;
+    width:90%;
     margin-top: 3%;
+    font-size:1.1em ;
 }
 .Solutions{
-    width:80%;
+    width:90%;
     display:flex;
     margin-top: 3%;
     flex-direction: row;
@@ -174,10 +175,47 @@ button{
 }
 
 .Solutions button{
-    width: 100%;
     font-weight: bolder;
     font-size: 1.5em;
-    line-height: 1.5em;
+}
+
+.constructionRow{
+    display:flex;
+    width: 90%;
+    margin-top: 2%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+ .middleContainer h2{
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 5%;
+    margin-right: 77%;
+}
+
+#description{
+    width: 50%;
+    font-size: 1em;
+    display:flex;
+    line-height: 1.8em;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#imageC{
+    width:50%;
+    box-sizing: border-box;
+    object-fit: contain;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#imageC img{
+    width:100%;
+    justify-content: flex-end;
+    object-fit: scale-down;
 }
 
 footer{
@@ -212,7 +250,7 @@ footer{
         letter-spacing: .09em;
         text-align: left;
     }
-    .solutions{
+    .Solutions{
         display:flex;
         flex-direction: column;
         width: 100%;
