@@ -136,19 +136,21 @@ body {
   }
 
   .row1 {
-      border: 5px solid limegreen;
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+      margin-top: 3%;
+      justify-content: space-evenly;
   }
 
   .row2 {
-    border: 5px solid limegreen;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    justify-content: space-evenly;
 }
 
   .row1 img{
-      width:100%;
+      width: 100%
   }
 
   .row2 img{
@@ -160,18 +162,22 @@ body {
 
 
   #image1 {
-    width: 50%;
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   #textbox1 {
-    width: 50%;
+    width: 40%;
 }
 #image2 {
-    width: 50%;
+    width:50%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #textbox2 {
-  width: 50%;
+  width: 40%;
 }
 
 h2{
@@ -197,8 +203,8 @@ button{
     box-sizing: border-box;
     margin-top: 3%;
     display:flex;
-    width: 90%;
-    margin-left:5% ;
+    width:93%;
+    align-content: center;
     flex-direction: column;
     position: relative;
 }
