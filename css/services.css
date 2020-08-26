@@ -1,49 +1,206 @@
-.container{
+/* Should be empty until you compile your LESS */
+/* Css Reset */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 100%;
+    background-color: #ffffff;
+    height: 100%;
+    color:#222222;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 3%;
+  }
+
+  .topnav h1{
+      font-size: 2em;
+      margin-left: 6%;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    width: 100%;
+    background-color: #828282;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right:0;
+    top: 0;
+    height:40px;
+    font-size: 2.3em;
+  }
+
+  .active {
+    background-color: #D8D8D8;
+    color: white;
+  }
+
+  .image-container{
+      position: relative;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+  }
+  .image-container img{
+      width: 100%;
+  }
+
+  .image-container .bottom-left {
+    color: #ffffff;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 4em;
+    text-align: left;
+    line-height: 1em;
+  }
+
+.services-sum{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
     background-color: #ffffff;
 }
 
-.services-sum{
-    width:95%;
-    margin:3%;
-    background-color: #ffffff;
-    font-size: 1em;
+#summary{
+    border:3px solid limegreen;
+    box-sizing: border-box;
+    font-size: .9em;
     line-height: 1.5em;
-    letter-spacing: .09em;
+    letter-spacing: .04em;
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.solutions{
+    box-sizing: border-box;
+    width: 100%;
 }
 
 button{
-    width: 20%;
-    font-size: 1em;
-    font-weight: bolder;
+    background-color: #ffffff;
 }
-
 .active{
     background-color: rgb(5, 130, 179);
     color:#ffffff;
     font-weight: bolder;
 }
 
-.solutions{
+.middleContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicesText{
+    width:80%;
+    margin-top: 3%;
+}
+.Solutions{
+    width:80%;
+    display:flex;
+    margin-top: 3%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Solutions button{
+    width: 100%;
+    font-weight: bolder;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+footer{
+    background-color: #828282;
+}
+
+.footer-container{
     display:flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-evenly;
+    padding: 5%;
+    color:#ffffff;
+    line-height: 1em;
 }
 
-.construction{
-    display:flex;
-    flex-direction: row wrap;
-    justify-content: space-between;
-    margin-top: 3%;
-    width:100%;
-    font-size: 1em;
+.footer-container h3{
+    font-weight: bolder;
 }
 
-.construction > div {
-    width: 50%;
+.footer-container span{
+    font-weight: lighter;
+    font-size: .5em;
 }
-
 
 @media (max-width:600px){
     .services-sum{
@@ -63,7 +220,7 @@ button{
         align-items: center;
     }
     button{
-        width:50%;
+        width:100%;
     }
     .construction{
         display:flex;
