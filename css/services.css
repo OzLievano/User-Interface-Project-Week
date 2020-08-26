@@ -241,40 +241,69 @@ footer{
 }
 
 @media (max-width:600px){
-    .services-sum{
-        width:95%;
-        margin:3%;
-        background-color: #ffffff;
-        font-size: .8em;
-        line-height: 1.5em;
-        letter-spacing: .09em;
-        text-align: left;
+    .servicesText{
+        width:90%;
+        margin-top: 3%;
+        font-size:1.1em ;
     }
     .Solutions{
         display:flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         justify-content: space-between;
         align-items: center;
     }
     button{
         width:100%;
     }
-    .construction{
+    .middleContainer h2{
+        font-size: 1.5em;
+        font-weight: bolder;
+        text-align: left;
+        margin-top: 5%;
+        margin-right: 55%;
+    }
+    .constructionRow{
         display:flex;
         flex-direction: column;
+        width: 100%;
+        margin-top: 2%;
         align-items: center;
-        text-align: left;
-        width:100%;
-        font-size: 1em;
+        margin-bottom: 5%;
     }
-
-    img{
+    #description {
+        width: 90%;
+        font-size: 1em;
+        display:flex;
+        line-height: 1.8em;
+        flex-direction: column;
+        margin-left: 5%;
+        justify-content: flex-start;
+    }
+    #imageC{
         width:100%;
+        box-sizing: border-box;
+        object-fit: contain;
+        justify-content: center;
         margin-top: 3%;
     }
 
-    footer{
-        width:100%;
+    .footer-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+        color:#ffffff;
+        line-height: 1em;
+    }
+    #box1{
+        font-size: 1.8em;
+        line-height: 1em;
+    }
+
+    #box1 input{
+        width: 100%;
+        margin-top: 2%;
+        line-height: 3em;
     }
 }
